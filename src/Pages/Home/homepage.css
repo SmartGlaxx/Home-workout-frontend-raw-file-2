@@ -1,0 +1,116 @@
+
+.homepage{
+    background-color: var(--background-color-8);
+    color: var(--color);
+    font-style: normal;
+    width: 99vw;
+    min-height: 100vh;
+    padding: var(--page-padding);
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-top: 4rem;
+}
+
+.workout-category{
+    margin: var(--section-margin-2);
+    align-items: center;
+}
+
+.workouts{
+    display: flex;
+    overflow: auto;
+    margin-top: var(--section-margin-2);
+}
+
+.workout-item{
+    margin: 3rem;
+}
+.workout-item h6{
+    color: var(--color);
+}
+.workout-item div{
+    color: var(--color);
+}
+.workout-image{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.workout-title-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.start-button{
+    background-color: transparent;
+    border: 1px solid var(--button-background);
+    color: var(--color);
+    padding: 0.2rem 0.7rem;
+    border-radius: 3px;
+    transition: all 0.5s;
+    float: right;
+    clear: both;
+}
+
+.start-button-recommended{
+    background-color: transparent;
+    border: 2px solid green;
+    color: var(--color);
+    padding: 0.2rem 0.7rem;
+    border-radius: 3px;
+    transition: all 0.5s;
+    float: right;
+    clear: both;
+}
+
+.start-button:hover{
+    background-color: transparent;
+    border: 1px solid var(--button-background);
+    padding: 0.2rem 0.9rem;
+    border-radius: 3px;
+}
+.start-button-recommended:hover{
+    background-color: transparent;
+    border: 2px solid green;
+    padding: 0.2rem 0.9rem;
+    border-radius: 3px;
+}
+
+
+.recommedation{
+    color: var(--color-notice1)
+}
+
+@media screen and (max-width: 767px){
+    .workout-category h4{
+        text-align: center;
+    }
+    .workout-item{
+        margin: 1rem;
+    }
+    .workout-image{
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .workouts h6{
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .homepage h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .workout-category{
+        margin: var(--section-margin-mobile);
+    }
+    .start-button{
+        margin-top: 1rem;
+    }
+}

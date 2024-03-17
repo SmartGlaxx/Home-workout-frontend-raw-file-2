@@ -1,0 +1,44 @@
+.risk-assessment{
+    background-color: var(--background-color-8);
+    color: var(--color);
+    font-style: normal;
+    min-height: 100vh;
+    max-height: auto;
+    min-width: 100vw;
+    max-width: auto;
+    padding: var(--page-padding);
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+.links{
+  width: calc(100% - (var(--page-padding) * 2));
+  display: flex;
+  justify-content: space-between;
+}
+.analysis-header{
+    color: var(--color-8);
+    text-align: center;
+}
+
+.risk-assessment-table{
+  background: var(--background-color-8);
+  color: var(--color-8);
+  width: calc(100% - (var(--page-padding) * 4));
+  margin: 0 auto;
+}
+
+.underweight{
+    color: darkorange;
+  }
+  .normal-weight{
+    color: green
+  }
+  .overweight{
+    color: orange
+  }
+  .obese{
+    color: red
+  }
+
+
+  

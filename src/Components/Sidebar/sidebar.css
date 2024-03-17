@@ -1,0 +1,122 @@
+.sidebarContainer1{
+    width: 18rem; 
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left : 0;
+    z-index: 12;
+    transform : translateX(-100%);
+    transition: all 0.7s;
+    background: var(--background-color);
+}
+.sidebarContainer2{
+    width: 18rem;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left : 0;
+    z-index: 12;
+    transform : translateX(0);
+    transition: all 0.7s;
+    background: var(--background-color);
+    display: none;
+}
+.sidebarTop {
+    height:  auto;
+    padding: 2rem 0;
+    background-color: var(--background-color-8);
+    
+}
+.close-icon{
+    float : right;
+    position: absolute;
+    right : 1rem;
+    top:1rem;
+    color: var(--color);
+    width : var(--icon-size1);
+}
+
+.sidebarlogo{
+    width: 100%;
+}
+
+.sideTop{
+    padding : 0.3rem 1rem
+}
+.sideTop-ul{
+    list-style-type: none;
+    color:var(--color2)
+}
+.sideBottom{
+    padding : 0.3rem 1.4rem
+}
+
+.sideTop-li{
+    cursor: pointer;
+    text-decoration: none;
+    color:var(--color);
+    margin: 0.8rem 0;
+}
+.sideTop-li-inner{
+    text-decoration: none; 
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: var(--font-weight);
+    padding: 0;
+    padding-left: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: var(--background-color);
+    color:var(--color);
+}
+.sideTop-li-inner-active{
+    text-decoration: none; 
+    font-size: 1.1rem;
+    font-weight: var(--font-weight);
+    padding-left: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: var(--background-color-10);
+    color:var(--color-7);
+}
+.icons{
+    color:var(--color);
+    margin-right: 0.5rem;
+}
+.icons-active{
+    color:var(--color-7);
+    margin-right: 0.5rem;
+}
+.sign-out{
+    display: flex;
+    text-align: left;
+    font-weight: var(--font-weight);
+    color: var(--warning-text-2);
+}
+.sign-out-icon{
+    float: left;
+    color: var(--warning-text-2);
+    margin-right: 0.5rem;
+}
+.sign-out-btn{
+    font-size: 1rem;
+}
+.mainlogo-link{
+    text-decoration: none;
+}
+.mainlogo{
+    margin-left: 1rem;;
+    font-size: var(--logo-font-size);
+    text-align: center;
+    color: var(--color4);
+}
+
+.sideBottom-inner{
+    width: 100%;
+    padding: var(--section-padding-2);
+    box-sizing: border-box;
+}
+
+@media screen and (max-width : 940px){
+    .sidebarContainer2{
+        display: block;
+    }
+}
